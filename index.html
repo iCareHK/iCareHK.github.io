@@ -72,10 +72,11 @@
 						<div class="responsive-menu"></div>
 					    <div class="mainmenu">
                             <ul id="primary-menu">
-                                <li><a class="nav-link active" href="#home">Home</a></li>
-                                <li><a class="nav-link" href="#feature">Feature</a></li>
-                                <li><a class="nav-link" href="#screenshot">Our Product</a></li>
-                                <li><a class="nav-link" href="#datasupport">Data Support</a></li>
+																<li><a class="nav-link active" href="#home">Home</a></li>
+																<li><a class="nav-link" href="#datasupport">Painpoints</a></li>
+                                <li><a class="nav-link" href="#feature">Our Product</a></li>
+                                <li><a class="nav-link" href="#screenshot">Demo</a></li>
+                                
 																<li><a class="nav-link" href="#faq">FAQ</a></li>
                                 <li><a class="appao-btn" href="#download">Download</a></li>
                             </ul>
@@ -84,6 +85,8 @@
 				</div>
 			</div>
 		</header><!-- header section end -->
+
+		
 
 
 		<!-- hero area start -->
@@ -108,14 +111,40 @@
 			</div>
 		</section><!-- hero area end -->
 
-
-		<!-- about section start -->
-		<section class="about-area ptb-90">
+		<section class="showcase-area ptb-90" id="datasupport">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 					    <div class="sec-title">
-							<h2>About iCare</h2>
+							<h2>Two Current Painpoints of the Elderly in Hong Kong</h2>
+							<br/>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row flexbox-center">
+					<div class="col-lg-6">
+						<div class="single-showcase-box">
+							<div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="single-showcase-box">
+							<div id="container4" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- showcase section end -->
+
+		<!-- about section start -->
+		<section class="about-area ptb-90" style="background-color: #f7f7f7">
+			<div class="container" >
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2>– iCare –<br> <span style="font-size:22px">A solution that gathers IT and financial innovations</span></h2>
 							<br/>
 						</div>
 					</div>
@@ -270,43 +299,7 @@
 		</section><!-- video section end -->
 		<!-- showcase section start -->
 
-		<section class="showcase-area ptb-90" id="datasupport">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-					    <div class="sec-title">
-							<h2>Data Support</h2>
-							<br/>
-						</div>
-					</div>
-				</div>
-				<div class="row flexbox-center">
-					<div class="col-lg-6">
-						<div class="single-showcase-box">
-							<div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="single-showcase-box">
-							<div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-						</div>
-					</div>
-				</div>
-				<div class="row flexbox-center">
-					<div class="col-lg-6">
-						<div class="single-showcase-box">
-							<div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="single-showcase-box">
-							<div id="container4" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-		</section><!-- showcase section end -->
+		
 
 		<!--==========================
 	 F.A.Q Section
@@ -495,161 +488,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		<script src="assets/js/main.js"></script>
 		<script>
 		// Create the chart
-Highcharts.chart('container1', {
-chart: {
-	type: 'pie'
-},
-title: {
-	text: 'Elderly persons aged 60 and over living alone had met specified groups of people and the frequency of meeting(Brothers or sisters)'
-},
-subtitle: {
-	text: 'Click the slices to view segments.'
-},
-plotOptions: {
-	series: {
-		dataLabels: {
-			enabled: true,
-			format: '{point.name}: {point.y:.1f}%'
-		}
-	}
-},
 
-tooltip: {
-	headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-	pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
-},
-
-"series": [
-	{
-		"name": "Browsers",
-		"colorByPoint": true,
-		"data": [
-			{
-				"name": "Yes",
-				"y": 83.8,
-				"drilldown": "Yes"
-			},
-			{
-				"name": "No",
-				"y": 16.2,
-				"drilldown": "No"
-			}
-
-
-		]
-	}
-],
-"drilldown": {
-	"series": [
-		{
-			"name": "Yes",
-			"id": "Yes",
-			"data": [
-				[
-					"Once or a few times a year",
-					56.1
-				],
-				[
-					"Once or a few times a month",
-					28.4
-				],
-				[
-					"Once or a few times a week",
-					15.5
-				]
-
-			]
-		},
-
-
-	]
-}
-});
-		</script>
-		<script>
-		// Create the chart
-Highcharts.chart('container2', {
-  chart: {
-    type: 'pie'
-  },
-  title: {
-    text: 'Elderly persons aged 60 and over living alone had met specified groups of people and the frequency of meeting(Friends & Neighbours)'
-  },
-  subtitle: {
-    text: 'Click the slices to view segments.'
-  },
-  plotOptions: {
-    series: {
-      dataLabels: {
-        enabled: true,
-        format: '{point.name}: {point.y:.1f}%'
-      }
-    }
-  },
-
-  tooltip: {
-    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
-  },
-
-  "series": [
-    {
-      "name": "Browsers",
-      "colorByPoint": true,
-      "data": [
-        {
-          "name": "Yes",
-          "y": 37.7,
-          "drilldown": "Yes"
-        },
-        {
-          "name": "No",
-          "y": 62.3,
-          "drilldown": "No"
-        }
-
-
-      ]
-    }
-  ],
-  "drilldown": {
-    "series": [
-      {
-        "name": "Yes",
-        "id": "Yes",
-        "data": [
-          [
-            "Once or a few times a year",
-            46.6
-          ],
-          [
-            "Once or a few times a month",
-            28.6
-          ],
-          [
-            "Once or a few times a week",
-            24.8
-          ]
-
-        ]
-      },
-
-
-    ]
-  }
-});
-		</script>
-		<script>
+	
 		// Create the chart
 Highcharts.chart('container3', {
   chart: {
     type: 'pie'
   },
   title: {
-    text: 'Elderly persons aged 60 and over living alone had met specified groups of people and the frequency of meeting(Relatives)'
+    text: 'Elderly persons (aged 60 and above) who live alone, and regularly meet their relatives (with the frequency)'
   },
   subtitle: {
-    text: 'Click the slices to view segments.'
+    text: 'Click the "Yes" slice to see the frequency.'
   },
   plotOptions: {
     series: {
@@ -719,11 +569,9 @@ Highcharts.chart('container4', {
     type: 'pie'
   },
   title: {
-    text: 'Elderly persons aged 60 and over living alone had met specified groups of people and the frequency of meeting(Social Workers or Volunteers)'
+    text: 'Elderly persons (aged 65 and above) who have bought insurance'
   },
-  subtitle: {
-    text: 'Click the slices to view segments.'
-  },
+ 
   plotOptions: {
     series: {
       dataLabels: {
@@ -745,44 +593,20 @@ Highcharts.chart('container4', {
       "data": [
         {
           "name": "Yes",
-          "y": 27.1,
+          "y": 6.5,
           "drilldown": "Yes"
         },
         {
           "name": "No",
-          "y": 72.9,
+          "y": 93.5,
           "drilldown": "No"
         }
 
 
       ]
     }
-  ],
-  "drilldown": {
-    "series": [
-      {
-        "name": "Yes",
-        "id": "Yes",
-        "data": [
-          [
-            "Once or a few times a year",
-            76.3
-          ],
-          [
-            "Once or a few times a month",
-            18.3
-          ],
-          [
-            "Once or a few times a week",
-            5.4
-          ]
-
-        ]
-      },
-
-
-    ]
-  }
+  ]
+  
 });
 		</script>
 	</body>
